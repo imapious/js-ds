@@ -6,11 +6,12 @@
 // Input: x = 10  => Output: false
 
 const isPalindrome = x => {
-    return x === +x.toString().split("").reverse().join("");
+
+    return x < 0 ? false : x === +x.toString().split("").reverse().join("");
     // console.log(+"10");
 }
 
-const res = isPalindrome(121);
+const res = isPalindrome(0);
 console.log(res);
 
 // .toString ==> 121 => "121"
